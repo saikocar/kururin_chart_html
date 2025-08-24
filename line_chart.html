@@ -31,37 +31,57 @@
     <script>
         (async () => {
             const jsonData = await (await fetch('autonomous_data.json')).json();
+            const dataKey2Legend = new Map([
+                ['pedalAutoDistance', 'ペダル自動化率'],
+                ['steeringAutoDistance', 'ハンドル自動化率'],
+                ['bothAutoDistance', 'ペダル＆ハンドル自動化率']
+            ]);
+            const legend2DataKey = new Map([...dataKey2Legend].map(([key, value]) => [value, key]));
 
-            const formatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'})
-            const labels = jsonData.map(item => formatter.format(new Date(item.date)));
+            const labels = jsonData.map(item => new Date(new Date(item.date).getTime() + 60/*s*/ * 1000));
+            let datasets = [];
+            dataKey2Legend.forEach((label, key) => datasets.push({label: label, data: jsonData.map(item => (item[key] / item.totalDistance * 100))}));
 
-            const pedalData = jsonData.map(item => (item.pedalAutoDistance / item.totalDistance * 100));
-            const handleData = jsonData.map(item => (item.steeringAutoDistance / item.totalDistance * 100));
-            const bothData = jsonData.map(item => (item.bothAutoDistance / item.totalDistance * 100));
-            const datasets = [
-                {label: 'ペダル自動化率', data: pedalData},
-                {label: 'ハンドル自動化率', data: handleData},
-                {label: 'ペダル＆ハンドル自動化率', data: bothData}
-            ];
+            const shortFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
+            const longFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
-            const data = {
-                labels: labels,
-                datasets: datasets
-            };
-
-            const ctx = document.getElementById('lineChart');
-
-            new Chart(ctx, {
+            new Chart(document.getElementById('lineChart'), {
                 type: 'line',
-                data: data,
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            callbacks: {
+                                title: items => {
+                                    const date = labels[items[0].dataIndex];
+                                    return longFormatter.format(date);
+                                },
+                                label: item => {
+                                    const distance = (jsonData[item.dataIndex][legend2DataKey.get(item.dataset.label)] / 1000).toFixed(1);
+                                    const totalDistance = (jsonData[item.dataIndex].totalDistance / 1000).toFixed(1);
+                                    return `${item.dataset.label}: ${item.formattedValue}% (${distance}km / ${totalDistance}km)`;
+                                }
+                            }
+                        }
+                    },
                     scales: {
+                        x: {
+                            ticks: {
+                                callback: (value, index, ticks) => shortFormatter.format(labels[index])
+                            }
+                        },
                         y: {
+                            suggestedMin: 60.0,
                             max: 100.0,
                             ticks: {
-                                stepSize: 1.0
+                                stepSize: 1.0,
+                                callback: value => `${value}%`
                             },
                         }
                     }
