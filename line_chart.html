@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動化率推移グラフ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        (async () => {
+            const jsonData = await (await fetch('autonomous_data.json')).json();
+
+            const formatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'})
+            let labels = jsonData.map(item => formatter.format(new Date(item.date)));
+            // 前と同じラベルは空文字に置き換え
+            labels = labels.map((label, i) => i > 0 && label === labels[i - 1] ? '' : label);
+
+            const pedalData = jsonData.map(item => (item.pedalAutoDistance / item.totalDistance * 100));
+            const handleData = jsonData.map(item => (item.steeringAutoDistance / item.totalDistance * 100));
+            const bothData = jsonData.map(item => (item.bothAutoDistance / item.totalDistance * 100));
+            const datasets = [
+                {label: 'ペダル自動化率', data: pedalData},
+                {label: 'ハンドル自動化率', data: handleData},
+                {label: 'ペダル＆ハンドル自動化率', data: bothData}
+            ];
+
+            const data = {
+                labels: labels,
+                datasets: datasets
+            };
+
+            const ctx = document.getElementById('lineChart');
+
+            new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            max: 100.0,
+                            ticks: {
+                                stepSize: 1.0
+                            },
+                        }
+                    }
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
