@@ -33,9 +33,7 @@
             const jsonData = await (await fetch('autonomous_data.json')).json();
 
             const formatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'})
-            let labels = jsonData.map(item => formatter.format(new Date(item.date)));
-            // 前と同じラベルは空文字に置き換え
-            labels = labels.map((label, i) => i > 0 && label === labels[i - 1] ? '' : label);
+            const labels = jsonData.map(item => formatter.format(new Date(item.date)));
 
             const pedalData = jsonData.map(item => (item.pedalAutoDistance / item.totalDistance * 100));
             const handleData = jsonData.map(item => (item.steeringAutoDistance / item.totalDistance * 100));
