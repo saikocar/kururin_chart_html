@@ -206,7 +206,7 @@
     "date": "2025-08-17T09:34:04+09:00",
     "totalDistance": 35275.187,
     "pedalAutoDistance": 30508.949,
-    "steeringAutoDistance": 33233.890,
+    "steeringAutoDistance": 33233.89,
     "bothAutoDistance": 30507.449
   },
   {
@@ -233,7 +233,7 @@
   {
     "date": "2025-08-24T09:34:04+09:00",
     "totalDistance": 35275.187,
-    "pedalAutoDistance": 33390.430,
+    "pedalAutoDistance": 33390.43,
     "steeringAutoDistance": 33735.995,
     "bothAutoDistance": 33332.23
   },
@@ -243,5 +243,19 @@
     "pedalAutoDistance": 33870.577,
     "steeringAutoDistance": 34463.156,
     "bothAutoDistance": 33868.476
+  },
+  {
+    "date": "2025-08-24T11:49:04+09:00",
+    "totalDistance": 35275.187416931534,
+    "pedalAutoDistance": 33870.576501852614,
+    "steeringAutoDistance": 34463.156473108436,
+    "bothAutoDistance": 33868.47649695511
+  },
+  {
+    "date": "2025-08-30T09:34:04+09:00",
+    "totalDistance": 34910.98896134386,
+    "pedalAutoDistance": 33656.64032036928,
+    "steeringAutoDistance": 33741.3141413592,
+    "bothAutoDistance": 33655.34031735113
   }
 ]
