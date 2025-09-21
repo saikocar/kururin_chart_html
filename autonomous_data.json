@@ -348,5 +348,12 @@
     "pedalAutoDistance": 32030.73608701093,
     "steeringAutoDistance": 32437.441212864607,
     "bothAutoDistance": 32024.536073651525
+  },
+  {
+    "date": "2025-09-21T11:49:04+09:00",
+    "totalDistance": 34910.98896134384,
+    "pedalAutoDistance": 32993.04115173652,
+    "steeringAutoDistance": 33664.7026800656,
+    "bothAutoDistance": 32991.94114919161
   }
 ]
