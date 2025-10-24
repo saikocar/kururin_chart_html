@@ -30,7 +30,7 @@
 
     <script>
         (async () => {
-            const jsonData = await (await fetch('autonomous_data.json')).json();
+            const jsonData = (await (await fetch('autonomous_data.json')).json()).slice(-40);
             const labels = jsonData.map(item => new Date(item.date));
             const datasets = [
                 {
