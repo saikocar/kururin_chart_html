@@ -30,34 +30,34 @@
 
     <script>
         (async () => {
-            const jsonData = (await (await fetch('autonomous_data.json')).json()).slice(-40);
-            const labels = jsonData.map(item => new Date(item.date));
-            const datasets = [
+            const automationData = (await (await fetch('autonomous_data.json')).json()).slice(-40);
+            const dateLabels = automationData.map(item => new Date(item.date));
+            const chartDatasets = [
                 {
                     label: 'ペダル自動化率',
                     dataField: 'pedalAutoDistance',
-                    data: jsonData.map(item => (item.pedalAutoDistance / item.totalDistance * 100))
+                    data: automationData.map(item => (item.pedalAutoDistance / item.totalDistance * 100))
                 },
                 {
                     label: 'ハンドル自動化率',
                     dataField: 'steeringAutoDistance',
-                    data: jsonData.map(item => (item.steeringAutoDistance / item.totalDistance * 100))
+                    data: automationData.map(item => (item.steeringAutoDistance / item.totalDistance * 100))
                 },
                 {
                     label: 'ペダル＆ハンドル自動化率',
                     dataField: 'bothAutoDistance',
-                    data: jsonData.map(item => (item.bothAutoDistance / item.totalDistance * 100))
+                    data: automationData.map(item => (item.bothAutoDistance / item.totalDistance * 100))
                 }
             ];
 
-            const shortFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
-            const longFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
+            const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
+            const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
             new Chart(document.getElementById('lineChart'), {
                 type: 'line',
                 data: {
-                    labels: labels,
-                    datasets: datasets
+                    labels: dateLabels,
+                    datasets: chartDatasets
                 },
                 options: {
                     responsive: true,
@@ -66,14 +66,15 @@
                         tooltip: {
                             mode: 'index',
                             callbacks: {
-                                title: items => {
-                                    const date = labels[items[0].dataIndex];
-                                    return longFormatter.format(date);
+                                title: tooltipItems => {
+                                    const date = dateLabels[tooltipItems[0].dataIndex];
+                                    return longDateFormatter.format(date);
                                 },
-                                label: item => {
-                                    const distance = (jsonData[item.dataIndex][item.dataset.dataField] / 1000).toFixed(1);
-                                    const totalDistance = (jsonData[item.dataIndex].totalDistance / 1000).toFixed(1);
-                                    return `${item.dataset.label}: ${item.formattedValue}% (${distance}km / ${totalDistance}km)`;
+                                label: tooltipItem => {
+                                    const dataItem = automationData[tooltipItem.dataIndex];
+                                    const autoDistanceKm = (dataItem[tooltipItem.dataset.dataField] / 1000).toFixed(1);
+                                    const totalDistanceKm = (dataItem.totalDistance / 1000).toFixed(1);
+                                    return `${tooltipItem.dataset.label}: ${tooltipItem.formattedValue}% (${autoDistanceKm}km / ${totalDistanceKm}km)`;
                                 }
                             }
                         }
@@ -81,7 +82,7 @@
                     scales: {
                         x: {
                             ticks: {
-                                callback: (value, index, ticks) => shortFormatter.format(labels[index])
+                                callback: (value, index, ticks) => shortDateFormatter.format(dateLabels[index])
                             }
                         },
                         y: {
