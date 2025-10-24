@@ -31,7 +31,7 @@
     <script>
         (async () => {
             const jsonData = await (await fetch('autonomous_data.json')).json();
-            const labels = jsonData.map(item => new Date(new Date(item.date).getTime() + 60/*s*/ * 1000));
+            const labels = jsonData.map(item => new Date(item.date));
             const datasets = [
                 {
                     label: 'ペダル自動化率',
