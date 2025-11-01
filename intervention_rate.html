@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>介入率推移グラフ</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-sizing: border-box;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        (async () => {
+            const automationData = (await (await fetch('autonomous_data.json')).json()).slice(-40);
+            const dateLabels = automationData.map(item => new Date(item.date));
+            const chartDatasets = [
+                {
+                    label: 'ペダル介入率',
+                    dataField: 'pedalTakeover',
+                    data: automationData.map(item => item.pedalTakeover / item.totalDistance * 1000),
+                    borderColor: 'rgb(204, 102, 0)',
+                    backgroundColor: 'rgba(204, 102, 0, 0.3)',
+                },
+                {
+                    label: 'ハンドル介入率',
+                    dataField: 'steeringTakeover',
+                    data: automationData.map(item => item.steeringTakeover / item.totalDistance * 1000),
+                    borderColor: 'rgb(0, 102, 204)',
+                    backgroundColor: 'rgba(0, 102, 204, 0.3)',
+                }
+            ];
+
+            const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
+            const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
+
+            new Chart(document.getElementById('lineChart'), {
+                type: 'line',
+                data: {
+                    labels: dateLabels,
+                    datasets: chartDatasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            callbacks: {
+                                title: tooltipItems => {
+                                    const date = dateLabels[tooltipItems[0].dataIndex];
+                                    return longDateFormatter.format(date);
+                                },
+                                label: tooltipItem => {
+                                    const dataItem = automationData[tooltipItem.dataIndex];
+                                    const takeoverCount = dataItem[tooltipItem.dataset.dataField];
+                                    const totalDistanceKm = (dataItem.totalDistance / 1000).toFixed(1);
+                                    return `${tooltipItem.dataset.label}: ${tooltipItem.formattedValue}回/km (${takeoverCount}回 / ${totalDistanceKm}km)`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: {
+                                callback: (value, index, ticks) => shortDateFormatter.format(dateLabels[index])
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: value => `${value}回/km`
+                            },
+                        }
+                    }
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
