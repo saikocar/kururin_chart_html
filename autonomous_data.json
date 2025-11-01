@@ -1,492 +1,632 @@
 [
   {
-    "date": "2025-06-07T09:30:04+09:00",
-    "totalDistance": 35292.968,
-    "pedalAutoDistance": 28614.243,
-    "steeringAutoDistance": 31403.083,
-    "bothAutoDistance": 28606.543
+    "date": "2025-06-07T11:33:57+09:00",
+    "totalDistance": 35292.96789147516,
+    "pedalAutoDistance": 28614.24325917594,
+    "steeringAutoDistance": 31403.082518164236,
+    "bothAutoDistance": 28606.54324115529,
+    "pedalTakeover": 81,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-06-07T11:59:09+09:00",
-    "totalDistance": 35292.968,
-    "pedalAutoDistance": 23823.736,
-    "steeringAutoDistance": 25929.123,
-    "bothAutoDistance": 23822.136
+    "date": "2025-06-07T13:43:14+09:00",
+    "totalDistance": 35292.96789147516,
+    "pedalAutoDistance": 23823.736185656002,
+    "steeringAutoDistance": 25929.123080932543,
+    "bothAutoDistance": 23822.13618191371,
+    "pedalTakeover": 58,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-06-14T11:50:18+09:00",
-    "totalDistance": 35292.968,
-    "pedalAutoDistance": 28613.421,
-    "steeringAutoDistance": 30525.565,
-    "bothAutoDistance": 28611.521
+    "date": "2025-06-14T13:43:04+09:00",
+    "totalDistance": 35292.96789147516,
+    "pedalAutoDistance": 28613.4212958632,
+    "steeringAutoDistance": 30525.565053330673,
+    "bothAutoDistance": 28611.521291491845,
+    "pedalTakeover": 57,
+    "steeringTakeover": 17
   },
   {
-    "date": "2025-06-15T09:33:40+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 26190.896,
-    "steeringAutoDistance": 28289.349,
-    "bothAutoDistance": 26188.996
+    "date": "2025-06-15T11:25:02+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 26190.89619667596,
+    "steeringAutoDistance": 28289.349370445027,
+    "bothAutoDistance": 26188.996192332328,
+    "pedalTakeover": 80,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-06-15T11:50:21+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 29943.695,
-    "steeringAutoDistance": 32450.657,
-    "bothAutoDistance": 29941.195
+    "date": "2025-06-15T13:45:58+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 29943.69525426104,
+    "steeringAutoDistance": 32450.657178479396,
+    "bothAutoDistance": 29941.19524841718,
+    "pedalTakeover": 82,
+    "steeringTakeover": 21
   },
   {
-    "date": "2025-06-21T09:34:18+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 27032.021,
-    "steeringAutoDistance": 32127.223,
-    "bothAutoDistance": 27031.121
+    "date": "2025-06-21T11:24:02+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 27032.021227879177,
+    "steeringAutoDistance": 32127.223196467563,
+    "bothAutoDistance": 27031.121225784293,
+    "pedalTakeover": 134,
+    "steeringTakeover": 29
   },
   {
-    "date": "2025-06-21T11:50:21+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 29226.072,
-    "steeringAutoDistance": 32851.416,
-    "bothAutoDistance": 29223.472
+    "date": "2025-06-21T13:45:37+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 29226.07212040778,
+    "steeringAutoDistance": 32851.415821547576,
+    "bothAutoDistance": 29223.472114400196,
+    "pedalTakeover": 119,
+    "steeringTakeover": 26
   },
   {
-    "date": "2025-06-22T09:35:18+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 25013.381,
-    "steeringAutoDistance": 27995.963,
-    "bothAutoDistance": 25008.281
+    "date": "2025-06-22T11:21:29+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 25013.38076313922,
+    "steeringAutoDistance": 27995.962981401597,
+    "bothAutoDistance": 25008.280751432314,
+    "pedalTakeover": 101,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-06-22T11:50:33+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 28168.688,
-    "steeringAutoDistance": 31536.643,
-    "bothAutoDistance": 28162.488
+    "date": "2025-06-22T13:42:54+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 28168.68800900936,
+    "steeringAutoDistance": 31536.643229366335,
+    "bothAutoDistance": 28162.48799451274,
+    "pedalTakeover": 85,
+    "steeringTakeover": 11
   },
   {
-    "date": "2025-06-29T09:37:29+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 28499.66,
-    "steeringAutoDistance": 31560.718,
-    "bothAutoDistance": 28497.96
+    "date": "2025-06-29T11:28:00+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 28499.659907955327,
+    "steeringAutoDistance": 31560.7175956164,
+    "bothAutoDistance": 28497.959904045816,
+    "pedalTakeover": 82,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-07-05T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 24624.048,
-    "steeringAutoDistance": 28969.403,
-    "bothAutoDistance": 24621.248
+    "date": "2025-07-05T11:25:56+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 24624.047988201295,
+    "steeringAutoDistance": 28969.403309824465,
+    "bothAutoDistance": 24621.247981659362,
+    "pedalTakeover": 135,
+    "steeringTakeover": 38
   },
   {
-    "date": "2025-07-05T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 30786.987,
-    "steeringAutoDistance": 33106.929,
-    "bothAutoDistance": 30782.087
+    "date": "2025-07-05T13:45:40+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 30786.987108971054,
+    "steeringAutoDistance": 33106.928551147845,
+    "bothAutoDistance": 30782.08709762158,
+    "pedalTakeover": 84,
+    "steeringTakeover": 24
   },
   {
-    "date": "2025-07-06T09:34:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 30497.894,
-    "steeringAutoDistance": 33681.245,
-    "bothAutoDistance": 30492.694
+    "date": "2025-07-06T11:23:58+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 30497.89361436213,
+    "steeringAutoDistance": 33681.24459109275,
+    "bothAutoDistance": 30492.693602893054,
+    "pedalTakeover": 92,
+    "steeringTakeover": 21
   },
   {
-    "date": "2025-07-06T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31059.456,
-    "steeringAutoDistance": 33955.363,
-    "bothAutoDistance": 31059.456
+    "date": "2025-07-06T13:47:54+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31059.455932841796,
+    "steeringAutoDistance": 33955.362573542225,
+    "bothAutoDistance": 31059.455932841796,
+    "pedalTakeover": 80,
+    "steeringTakeover": 17
   },
   {
-    "date": "2025-07-12T09:34:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31875.591,
-    "steeringAutoDistance": 32589.951,
-    "bothAutoDistance": 31837.291
+    "date": "2025-07-12T11:25:23+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31875.5910942603,
+    "steeringAutoDistance": 32589.95093737035,
+    "bothAutoDistance": 31873.29109142803,
+    "pedalTakeover": 63,
+    "steeringTakeover": 36
   },
   {
-    "date": "2025-07-12T11:49:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31821.739,
-    "steeringAutoDistance": 32793.24,
-    "bothAutoDistance": 31831.039
+    "date": "2025-07-12T13:48:11+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31821.7392678993,
+    "steeringAutoDistance": 32793.24047458265,
+    "bothAutoDistance": 31813.03924761391,
+    "pedalTakeover": 63,
+    "steeringTakeover": 27
   },
   {
-    "date": "2025-07-19T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31189.325,
-    "steeringAutoDistance": 32587.551,
-    "bothAutoDistance": 31186.925
+    "date": "2025-07-19T11:26:59+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31189.32506462939,
+    "steeringAutoDistance": 32587.551192176263,
+    "bothAutoDistance": 31186.925059015288,
+    "pedalTakeover": 55,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-07-19T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 33103.981,
-    "steeringAutoDistance": 34111.63,
-    "bothAutoDistance": 33102.581
+    "date": "2025-07-19T13:41:15+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 33103.98147117601,
+    "steeringAutoDistance": 34111.62987982818,
+    "bothAutoDistance": 33102.5814679663,
+    "pedalTakeover": 50,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-07-20T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31499.617,
-    "steeringAutoDistance": 33119.739,
-    "bothAutoDistance": 31498.917
+    "date": "2025-07-20T13:42:28+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31499.61697984408,
+    "steeringAutoDistance": 33119.73874793526,
+    "bothAutoDistance": 31498.916978210487,
+    "pedalTakeover": 58,
+    "steeringTakeover": 13
   },
   {
-    "date": "2025-07-27T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 32196.858,
-    "steeringAutoDistance": 33296.977,
-    "bothAutoDistance": 32196.458
+    "date": "2025-07-27T11:30:46+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 32196.858455713427,
+    "steeringAutoDistance": 33296.97681997623,
+    "bothAutoDistance": 32196.45845477722,
+    "pedalTakeover": 49,
+    "steeringTakeover": 17
   },
   {
-    "date": "2025-07-27T11:49:05+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 33231.544,
-    "steeringAutoDistance": 33984.199,
-    "bothAutoDistance": 33230.244
+    "date": "2025-07-27T13:41:45+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 33231.543931474764,
+    "steeringAutoDistance": 33984.198733598794,
+    "bothAutoDistance": 33230.24392847741,
+    "pedalTakeover": 44,
+    "steeringTakeover": 13
   },
   {
-    "date": "2025-08-02T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 32061.065,
-    "steeringAutoDistance": 33163.808,
-    "bothAutoDistance": 31767.664
+    "date": "2025-08-02T11:24:21+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 32061.065048720033,
+    "steeringAutoDistance": 33163.808277466575,
+    "bothAutoDistance": 31767.664372034407,
+    "pedalTakeover": 55,
+    "steeringTakeover": 17
   },
   {
-    "date": "2025-08-02T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 33705.377,
-    "steeringAutoDistance": 34089.818,
-    "bothAutoDistance": 33704.477
+    "date": "2025-08-02T13:44:11+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 33705.37736404501,
+    "steeringAutoDistance": 34089.81802311749,
+    "bothAutoDistance": 33704.47736495782,
+    "pedalTakeover": 37,
+    "steeringTakeover": 20
   },
   {
-    "date": "2025-08-03T09:34:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31408.992,
-    "steeringAutoDistance": 32698.121,
-    "bothAutoDistance": 31406.392
+    "date": "2025-08-03T11:21:41+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31408.99159663528,
+    "steeringAutoDistance": 32698.121180929862,
+    "bothAutoDistance": 31406.39159098359,
+    "pedalTakeover": 75,
+    "steeringTakeover": 34
   },
   {
-    "date": "2025-08-03T11:49:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 33101.371,
-    "steeringAutoDistance": 33589.999,
-    "bothAutoDistance": 33099.871
+    "date": "2025-08-03T13:39:28+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 33101.37108176113,
+    "steeringAutoDistance": 33589.998571900614,
+    "bothAutoDistance": 33099.87107844024,
+    "pedalTakeover": 39,
+    "steeringTakeover": 25
   },
   {
-    "date": "2025-08-10T09:34:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 29645.262,
-    "steeringAutoDistance": 32103.854,
-    "bothAutoDistance": 29641.962
+    "date": "2025-08-10T11:28:35+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 29645.26162926582,
+    "steeringAutoDistance": 32103.853784367355,
+    "bothAutoDistance": 29641.961621699527,
+    "pedalTakeover": 76,
+    "steeringTakeover": 30
   },
   {
-    "date": "2025-08-10T11:49:03+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 30082.191,
-    "steeringAutoDistance": 32797.593,
-    "bothAutoDistance": 30079.191
+    "date": "2025-08-10T13:39:34+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 30082.191072377536,
+    "steeringAutoDistance": 32793.5931833222,
+    "bothAutoDistance": 30079.191065481908,
+    "pedalTakeover": 83,
+    "steeringTakeover": 28
   },
   {
-    "date": "2025-08-16T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31468.795,
-    "steeringAutoDistance": 33399.191,
-    "bothAutoDistance": 31466.895
+    "date": "2025-08-16T11:19:11+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31468.795353176985,
+    "steeringAutoDistance": 33399.19123960044,
+    "bothAutoDistance": 31466.895348750608,
+    "pedalTakeover": 83,
+    "steeringTakeover": 25
   },
   {
-    "date": "2025-08-16T11:49:05+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 31728.35,
-    "steeringAutoDistance": 33394.005,
-    "bothAutoDistance": 31725.55
+    "date": "2025-08-16T13:42:46+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 31728.34958060946,
+    "steeringAutoDistance": 33394.00520710832,
+    "bothAutoDistance": 31725.54957405821,
+    "pedalTakeover": 70,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-08-17T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 30508.949,
-    "steeringAutoDistance": 33233.89,
-    "bothAutoDistance": 30507.449
+    "date": "2025-08-17T11:20:45+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 30508.948921033007,
+    "steeringAutoDistance": 33233.89028170976,
+    "bothAutoDistance": 30507.448917824113,
+    "pedalTakeover": 101,
+    "steeringTakeover": 28
   },
   {
-    "date": "2025-08-17T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 30168.046,
-    "steeringAutoDistance": 31085.343,
-    "bothAutoDistance": 30161.746
+    "date": "2025-08-17T13:43:29+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 30168.04608744174,
+    "steeringAutoDistance": 31085.343225746445,
+    "bothAutoDistance": 30161.746072754584,
+    "pedalTakeover": 56,
+    "steeringTakeover": 32
   },
   {
-    "date": "2025-08-23T09:34:05+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 28030.665,
-    "steeringAutoDistance": 28896.647,
-    "bothAutoDistance": 28029.365
+    "date": "2025-08-23T11:22:39+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 28030.664731117682,
+    "steeringAutoDistance": 28896.64666285155,
+    "bothAutoDistance": 28029.36472807503,
+    "pedalTakeover": 43,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-08-23T11:49:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 27304.838,
-    "steeringAutoDistance": 28554.651,
-    "bothAutoDistance": 27303.038
+    "date": "2025-08-23T13:44:01+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 27304.837598886443,
+    "steeringAutoDistance": 28554.650618272277,
+    "bothAutoDistance": 27303.037594734327,
+    "pedalTakeover": 55,
+    "steeringTakeover": 20
   },
   {
-    "date": "2025-08-24T09:34:04+09:00",
-    "totalDistance": 35275.187,
-    "pedalAutoDistance": 33390.43,
-    "steeringAutoDistance": 33735.995,
-    "bothAutoDistance": 33332.23
+    "date": "2025-08-24T11:17:34+09:00",
+    "totalDistance": 35275.18741693154,
+    "pedalAutoDistance": 33390.430151035456,
+    "steeringAutoDistance": 33735.99530902323,
+    "bothAutoDistance": 33332.23002088422,
+    "pedalTakeover": 41,
+    "steeringTakeover": 23
   },
   {
-    "date": "2025-08-24T11:49:04+09:00",
-    "totalDistance": 35275.187416931534,
+    "date": "2025-08-24T13:42:58+09:00",
+    "totalDistance": 35275.18741693154,
     "pedalAutoDistance": 33870.576501852614,
-    "steeringAutoDistance": 34463.156473108436,
-    "bothAutoDistance": 33868.47649695511
+    "steeringAutoDistance": 34463.15647310844,
+    "bothAutoDistance": 33868.47649695511,
+    "pedalTakeover": 37,
+    "steeringTakeover": 14
   },
   {
-    "date": "2025-08-30T09:34:04+09:00",
-    "totalDistance": 34910.98896134386,
-    "pedalAutoDistance": 33656.64032036928,
+    "date": "2025-08-30T11:29:09+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 33656.64032036929,
     "steeringAutoDistance": 33741.3141413592,
-    "bothAutoDistance": 33655.34031735113
+    "bothAutoDistance": 33655.340317351125,
+    "pedalTakeover": 21,
+    "steeringTakeover": 21
   },
   {
-    "date": "2025-08-30T11:49:06+09:00",
+    "date": "2025-08-30T13:44:26+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 31173.004684062562,
     "steeringAutoDistance": 32102.384782405774,
-    "bothAutoDistance": 31172.60468312636
+    "bothAutoDistance": 31172.60468312636,
+    "pedalTakeover": 43,
+    "steeringTakeover": 20
   },
   {
-    "date": "2025-08-31T09:34:07+09:00",
+    "date": "2025-08-31T11:23:05+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32199.051366924254,
     "steeringAutoDistance": 33675.17032697316,
-    "bothAutoDistance": 32196.051362142458
+    "bothAutoDistance": 32196.051362142458,
+    "pedalTakeover": 68,
+    "steeringTakeover": 24
   },
   {
-    "date": "2025-08-31T11:49:04+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 34030.02021071024,
-    "steeringAutoDistance": 34469.620218430406,
-    "bothAutoDistance": 34029.520209541
+    "date": "2025-08-31T13:43:09+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 34030.02021071023,
+    "steeringAutoDistance": 34469.6202184304,
+    "bothAutoDistance": 34029.52020954099,
+    "pedalTakeover": 34,
+    "steeringTakeover": 14
   },
   {
-    "date": "2025-09-06T09:34:04+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 32624.420588333574,
+    "date": "2025-09-06T11:23:39+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 32624.420588333578,
     "steeringAutoDistance": 33013.17938978903,
-    "bothAutoDistance": 32622.620584316395
+    "bothAutoDistance": 32622.6205843164,
+    "pedalTakeover": 41,
+    "steeringTakeover": 29
   },
   {
-    "date": "2025-09-06T11:49:04+09:00",
+    "date": "2025-09-06T13:44:16+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 28763.092024754907,
-    "steeringAutoDistance": 30761.34423328557,
-    "bothAutoDistance": 28761.592021246437
+    "steeringAutoDistance": 30761.344233285563,
+    "bothAutoDistance": 28761.592021246433,
+    "pedalTakeover": 70,
+    "steeringTakeover": 31
   },
   {
-    "date": "2025-09-07T11:49:04+09:00",
+    "date": "2025-09-07T13:41:32+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 32194.948715528917,
-    "steeringAutoDistance": 32790.79451159779,
-    "bothAutoDistance": 32192.948710856246
+    "pedalAutoDistance": 32194.948715528924,
+    "steeringAutoDistance": 32790.7945115978,
+    "bothAutoDistance": 32192.948710856253,
+    "pedalTakeover": 47,
+    "steeringTakeover": 27
   },
   {
-    "date": "2025-09-13T09:34:04+09:00",
+    "date": "2025-09-13T11:21:06+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 28522.343564278373,
-    "steeringAutoDistance": 29301.428671916987,
-    "bothAutoDistance": 28480.243466236356
+    "steeringAutoDistance": 29301.42867191699,
+    "bothAutoDistance": 28480.243466236352,
+    "pedalTakeover": 57,
+    "steeringTakeover": 26
   },
   {
-    "date": "2025-09-13T11:49:04+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 33421.710991457905,
+    "date": "2025-09-13T13:43:44+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 33421.71099145791,
     "steeringAutoDistance": 33860.7000892502,
-    "bothAutoDistance": 33420.31098897146
+    "bothAutoDistance": 33420.31098897146,
+    "pedalTakeover": 47,
+    "steeringTakeover": 21
   },
   {
-    "date": "2025-09-14T09:34:03+09:00",
+    "date": "2025-09-14T11:21:06+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 32586.898366846985,
-    "steeringAutoDistance": 33772.66108727364,
-    "bothAutoDistance": 32584.798362565805
+    "pedalAutoDistance": 32586.89836684698,
+    "steeringAutoDistance": 33772.661087273635,
+    "bothAutoDistance": 32584.798362565805,
+    "pedalTakeover": 70,
+    "steeringTakeover": 21
   },
   {
-    "date": "2025-09-14T11:49:04+09:00",
+    "date": "2025-09-14T13:40:26+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 30984.105966507155,
-    "steeringAutoDistance": 31727.269414191578,
-    "bothAutoDistance": 30982.60596355437
+    "pedalAutoDistance": 30984.10596650715,
+    "steeringAutoDistance": 31727.269414191574,
+    "bothAutoDistance": 30982.605963554368,
+    "pedalTakeover": 58,
+    "steeringTakeover": 24
   },
   {
-    "date": "2025-09-20T09:34:04+09:00",
-    "totalDistance": 34910.98896134384,
+    "date": "2025-09-20T11:20:10+09:00",
+    "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 30391.988709828227,
-    "steeringAutoDistance": 30855.243252560944,
-    "bothAutoDistance": 30391.08870959504
+    "steeringAutoDistance": 30855.24325256094,
+    "bothAutoDistance": 30391.088709595042,
+    "pedalTakeover": 49,
+    "steeringTakeover": 37
   },
   {
-    "date": "2025-09-20T11:49:04+09:00",
+    "date": "2025-09-20T13:42:32+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32603.45151859543,
     "steeringAutoDistance": 33025.537584113765,
-    "bothAutoDistance": 32596.95150438728
+    "bothAutoDistance": 32596.95150438728,
+    "pedalTakeover": 45,
+    "steeringTakeover": 26
   },
   {
-    "date": "2025-09-21T09:34:03+09:00",
+    "date": "2025-09-21T11:22:47+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32030.73608701093,
-    "steeringAutoDistance": 32437.441212864607,
-    "bothAutoDistance": 32024.536073651525
+    "steeringAutoDistance": 32437.44121286461,
+    "bothAutoDistance": 32024.536073651525,
+    "pedalTakeover": 52,
+    "steeringTakeover": 36
   },
   {
-    "date": "2025-09-21T11:49:04+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 32993.04115173652,
-    "steeringAutoDistance": 33664.7026800656,
-    "bothAutoDistance": 32991.94114919161
-  },
-  {
-    "date": "2025-09-27T09:34:04+09:00",
+    "date": "2025-09-21T13:40:47+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 31859.506872289017,
-    "steeringAutoDistance": 32425.88674291631,
-    "bothAutoDistance": 31794.60672693167
+    "pedalAutoDistance": 32993.04115173653,
+    "steeringAutoDistance": 33664.7026800656,
+    "bothAutoDistance": 32991.94114919162,
+    "pedalTakeover": 54,
+    "steeringTakeover": 23
   },
   {
-    "date": "2025-09-27T11:49:05+09:00",
-    "totalDistance": 34910.98896134386,
+    "date": "2025-09-27T11:25:11+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 31859.506872289014,
+    "steeringAutoDistance": 32425.886742916307,
+    "bothAutoDistance": 31794.60672693167,
+    "pedalTakeover": 54,
+    "steeringTakeover": 29
+  },
+  {
+    "date": "2025-09-27T13:48:03+09:00",
+    "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 33018.24046335431,
     "steeringAutoDistance": 33203.54069546432,
-    "bothAutoDistance": 33004.44043110838
+    "bothAutoDistance": 33004.440431108385,
+    "pedalTakeover": 36,
+    "steeringTakeover": 31
   },
   {
-    "date": "2025-09-28T09:34:04+09:00",
-    "totalDistance": 34910.98896134384,
+    "date": "2025-09-28T11:25:30+09:00",
+    "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 31440.887688231764,
-    "steeringAutoDistance": 31933.488549211277,
-    "bothAutoDistance": 31440.287686827476
+    "steeringAutoDistance": 31933.48854921128,
+    "bothAutoDistance": 31440.287686827476,
+    "pedalTakeover": 33,
+    "steeringTakeover": 26
   },
   {
-    "date": "2025-09-28T11:49:05+09:00",
+    "date": "2025-09-28T13:37:57+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 33372.769446162754,
     "steeringAutoDistance": 34041.04262264027,
-    "bothAutoDistance": 33371.369442889256
+    "bothAutoDistance": 33371.36944288925,
+    "pedalTakeover": 40,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-10-04T09:43:04+09:00",
-    "totalDistance": 34910.98896134386,
-    "pedalAutoDistance": 30394.599672035223,
-    "steeringAutoDistance": 30996.94681024497,
-    "bothAutoDistance": 30392.699667609322
+    "date": "2025-10-04T11:23:21+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 30394.599672035227,
+    "steeringAutoDistance": 30996.94681024496,
+    "bothAutoDistance": 30392.699667609326,
+    "pedalTakeover": 46,
+    "steeringTakeover": 23
   },
   {
-    "date": "2025-10-04T11:49:04+09:00",
+    "date": "2025-10-04T13:43:05+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32281.05365941443,
     "steeringAutoDistance": 33127.44928774555,
-    "bothAutoDistance": 32278.153652658824
+    "bothAutoDistance": 32278.15365265882,
+    "pedalTakeover": 50,
+    "steeringTakeover": 24
   },
   {
-    "date": "2025-10-05T10:06:50+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 29828.844122095514,
+    "date": "2025-10-05T11:20:48+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 29828.844122095517,
     "steeringAutoDistance": 32555.40629052368,
-    "bothAutoDistance": 29823.644109951692
+    "bothAutoDistance": 29823.644109951696,
+    "pedalTakeover": 118,
+    "steeringTakeover": 31
   },
   {
-    "date": "2025-10-05T11:49:04+09:00",
-    "totalDistance": 34910.98896134384,
-    "pedalAutoDistance": 33165.49787321091,
+    "date": "2025-10-05T13:43:35+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 33165.4978732109,
     "steeringAutoDistance": 33896.41204394127,
-    "bothAutoDistance": 33161.197863197245
+    "bothAutoDistance": 33161.19786319724,
+    "pedalTakeover": 49,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-10-11T09:34:04+09:00",
-    "totalDistance": 34910.98896134384,
+    "date": "2025-10-11T11:22:39+09:00",
+    "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 33674.889121378335,
-    "steeringAutoDistance": 33882.22210833498,
-    "bothAutoDistance": 33674.389120209555
+    "steeringAutoDistance": 33882.22210833499,
+    "bothAutoDistance": 33674.38912020955,
+    "pedalTakeover": 29,
+    "steeringTakeover": 18
   },
   {
-    "date": "2025-10-11T11:49:04+09:00",
+    "date": "2025-10-11T13:48:11+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 33904.3029938385,
     "steeringAutoDistance": 34262.78783755889,
-    "bothAutoDistance": 33903.10299103111
+    "bothAutoDistance": 33903.10299103111,
+    "pedalTakeover": 32,
+    "steeringTakeover": 14
   },
   {
-    "date": "2025-10-12T09:34:04+09:00",
+    "date": "2025-10-12T11:23:58+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 34145.71511040755,
-    "steeringAutoDistance": 34393.49337736099,
-    "bothAutoDistance": 34145.31510947143
+    "pedalAutoDistance": 34145.71511040756,
+    "steeringAutoDistance": 34393.493377360996,
+    "bothAutoDistance": 34145.31510947143,
+    "pedalTakeover": 34,
+    "steeringTakeover": 15
   },
   {
-    "date": "2025-10-12T11:49:05+09:00",
-    "totalDistance": 34910.98896134384,
+    "date": "2025-10-12T13:40:50+09:00",
+    "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 34274.10173424705,
     "steeringAutoDistance": 34498.388366230065,
-    "bothAutoDistance": 34272.70173128853
+    "bothAutoDistance": 34272.70173128853,
+    "pedalTakeover": 33,
+    "steeringTakeover": 11
   },
   {
-    "date": "2025-10-19T09:34:04+09:00",
+    "date": "2025-10-19T11:19:48+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 32098.927954093568,
-    "steeringAutoDistance": 32560.695190181763,
-    "bothAutoDistance": 32098.22795247009
+    "pedalAutoDistance": 32098.92795409357,
+    "steeringAutoDistance": 32560.69519018176,
+    "bothAutoDistance": 32098.22795247009,
+    "pedalTakeover": 38,
+    "steeringTakeover": 11
   },
   {
-    "date": "2025-10-19T11:49:05+09:00",
+    "date": "2025-10-19T13:40:36+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 34129.735411764224,
     "steeringAutoDistance": 34425.84366328563,
-    "bothAutoDistance": 34128.73540946778
+    "bothAutoDistance": 34128.73540946778,
+    "pedalTakeover": 29,
+    "steeringTakeover": 11
   },
   {
-    "date": "2025-10-25T09:34:04+09:00",
+    "date": "2025-10-25T11:18:52+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 31169.145262286424,
+    "pedalAutoDistance": 31169.145262286427,
     "steeringAutoDistance": 31562.147302127152,
-    "bothAutoDistance": 31166.345255743727
+    "bothAutoDistance": 31166.345255743727,
+    "pedalTakeover": 53,
+    "steeringTakeover": 32
   },
   {
-    "date": "2025-10-25T11:49:04+09:00",
+    "date": "2025-10-25T13:41:26+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32789.14743507534,
     "steeringAutoDistance": 33353.547924067,
-    "bothAutoDistance": 32786.847429701724
+    "bothAutoDistance": 32786.847429701724,
+    "pedalTakeover": 56,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-10-26T09:35:53+09:00",
+    "date": "2025-10-26T11:29:33+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 32422.345067038554,
     "steeringAutoDistance": 33169.29550457612,
-    "bothAutoDistance": 32415.145050414652
+    "bothAutoDistance": 32415.145050414652,
+    "pedalTakeover": 55,
+    "steeringTakeover": 22
   },
   {
-    "date": "2025-10-26T11:49:05+09:00",
+    "date": "2025-10-26T13:42:49+09:00",
     "totalDistance": 34910.98896134385,
     "pedalAutoDistance": 33220.56326301813,
     "steeringAutoDistance": 33778.86385931584,
-    "bothAutoDistance": 33218.96325935556
+    "bothAutoDistance": 33218.96325935556,
+    "pedalTakeover": 59,
+    "steeringTakeover": 27
   },
   {
-    "date": "2025-11-01T09:34:04+09:00",
+    "date": "2025-11-01T11:16:29+09:00",
     "totalDistance": 34910.98896134385,
-    "pedalAutoDistance": 4713.588240694432,
+    "pedalAutoDistance": 4713.588240694433,
     "steeringAutoDistance": 32433.967657578665,
-    "bothAutoDistance": 4707.288227044856
+    "bothAutoDistance": 4707.288227044856,
+    "pedalTakeover": 37,
+    "steeringTakeover": 33
   },
   {
-    "date": "2025-11-01T11:49:04+09:00",
-    "totalDistance": 21126.231098755197,
+    "date": "2025-11-01T14:01:48+09:00",
+    "totalDistance": 23446.667523312357,
     "pedalAutoDistance": 16840.265359086843,
     "steeringAutoDistance": 19710.927273930458,
-    "bothAutoDistance": 16834.765351693615
+    "bothAutoDistance": 16834.765351693615,
+    "pedalTakeover": 110,
+    "steeringTakeover": 10
   }
 ]
