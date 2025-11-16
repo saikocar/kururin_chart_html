@@ -700,5 +700,14 @@
     "bothAutoDistance": 33610.30982049469,
     "pedalTakeover": 44,
     "steeringTakeover": 16
+  },
+  {
+    "date": "2025-11-16T13:39:55+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 33695.97485339358,
+    "steeringAutoDistance": 34015.69522059335,
+    "bothAutoDistance": 33694.074849188495,
+    "pedalTakeover": 42,
+    "steeringTakeover": 20
   }
 ]
