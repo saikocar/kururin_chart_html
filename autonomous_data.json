@@ -782,5 +782,15 @@
     "pedalTakeover": 75,
     "steeringTakeover": 31,
     "uncomfortableBrake1": 31
+  },
+  {
+    "date": "2025-12-07T13:38:58+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 28440.4694697789,
+    "steeringAutoDistance": 29175.449157944193,
+    "bothAutoDistance": 28427.069438609495,
+    "pedalTakeover": 81,
+    "steeringTakeover": 30,
+    "uncomfortableBrake1": 26
   }
 ]
