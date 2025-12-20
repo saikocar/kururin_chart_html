@@ -27,6 +27,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
 
     <script>
         (async () => {
@@ -34,7 +35,7 @@
             const dateLabels = automationData.map(item => new Date(item.date));
 
             // 到着遅延時間を計算（分単位）
-            const delayData = automationData.map(item => {
+            const delayData = automationData.map((item, index) => {
                 const arrivalTime = new Date(item.date);
                 const hour = arrivalTime.getHours();
                 const minute = arrivalTime.getMinutes();
@@ -56,7 +57,10 @@
                 }
 
                 const actualMinute = hour * 60 + minute;
-                return actualMinute - scheduledMinute;
+                return {
+                    x: dateLabels[index],
+                    y: actualMinute - scheduledMinute
+                };
             });
 
             const chartDatasets = [
@@ -64,7 +68,9 @@
                     label: '到着遅延時間',
                     data: delayData,
                     borderColor: 'rgb(153, 102, 255)',
-                    backgroundColor: 'rgba(153, 102, 255, 0.3)',
+                    backgroundColor: 'rgba(153, 102, 255, 0.5)',
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
                 }
             ];
 
@@ -72,9 +78,8 @@
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
             new Chart(document.getElementById('lineChart'), {
-                type: 'line',
+                type: 'scatter',
                 data: {
-                    labels: dateLabels,
                     datasets: chartDatasets
                 },
                 options: {
@@ -82,10 +87,10 @@
                     maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
-                            mode: 'index',
+                            mode: 'nearest',
                             callbacks: {
                                 title: tooltipItems => {
-                                    const date = dateLabels[tooltipItems[0].dataIndex];
+                                    const date = new Date(tooltipItems[0].parsed.x);
                                     return longDateFormatter.format(date);
                                 },
                                 label: tooltipItem => {
@@ -98,8 +103,15 @@
                     },
                     scales: {
                         x: {
+                            type: 'time',
+                            time: {
+                                unit: 'day',
+                                displayFormats: {
+                                    day: 'M/d'
+                                }
+                            },
                             ticks: {
-                                callback: (value, index, ticks) => shortDateFormatter.format(dateLabels[index])
+                                source: 'auto'
                             }
                         },
                         y: {
