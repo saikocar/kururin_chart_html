@@ -40,6 +40,13 @@
                     borderColor: 'rgb(255, 153, 0)',
                     backgroundColor: 'rgba(255, 153, 0, 0.3)',
                 },
+                {
+                    label: '停車失敗',
+                    dataField: 'stopFailure',
+                    data: automationData.map(item => item.stopFailure),
+                    borderColor: 'rgb(220, 53, 69)',
+                    backgroundColor: 'rgba(220, 53, 69, 0.3)',
+                },
             ];
 
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
