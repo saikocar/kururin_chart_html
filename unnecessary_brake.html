@@ -51,6 +51,15 @@
                     showLine: false,
                     pointRadius: 6,
                 },
+                {
+                    label: 'MRM',
+                    dataField: 'mrm',
+                    data: automationData.map(item => item.mrm),
+                    borderColor: 'rgb(128, 0, 128)',
+                    backgroundColor: 'rgba(128, 0, 128, 0.8)',
+                    showLine: false,
+                    pointRadius: 6,
+                },
             ];
 
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});

@@ -853,7 +853,8 @@
     "steeringTakeover": 5,
     "uncomfortableBrake1": 9,
     "unnecessaryBrake": 1,
-    "stopFailure": 2
+    "stopFailure": 2,
+    "mrm": 0
   },
   {
     "date": "2025-12-21T13:39:59+09:00",
@@ -865,7 +866,8 @@
     "steeringTakeover": 5,
     "uncomfortableBrake1": 10,
     "unnecessaryBrake": 0,
-    "stopFailure": 0
+    "stopFailure": 0,
+    "mrm": 0
   },
   {
     "date": "2025-12-27T13:45:19+09:00",
@@ -877,7 +879,8 @@
     "steeringTakeover": 18,
     "uncomfortableBrake1": 34,
     "unnecessaryBrake": 3,
-    "stopFailure": 0
+    "stopFailure": 0,
+    "mrm": 0
   },
   {
     "date": "2025-12-28T11:24:33+09:00",
@@ -889,7 +892,8 @@
     "steeringTakeover": 21,
     "uncomfortableBrake1": 7,
     "unnecessaryBrake": 1,
-    "stopFailure": 1
+    "stopFailure": 1,
+    "mrm": 1
   },
   {
     "date": "2025-12-28T13:41:26+09:00",
@@ -901,7 +905,8 @@
     "steeringTakeover": 13,
     "uncomfortableBrake1": 22,
     "unnecessaryBrake": 0,
-    "stopFailure": 0
+    "stopFailure": 0,
+    "mrm": 0
   },
   {
     "date": "2026-01-04T11:19:10+09:00",
@@ -933,7 +938,8 @@
     "steeringTakeover": 22,
     "uncomfortableBrake1": 3,
     "unnecessaryBrake": 2,
-    "stopFailure": 4
+    "stopFailure": 4,
+    "mrm": 0
   },
   {
     "date": "2026-01-10T13:43:23+09:00",
@@ -945,7 +951,8 @@
     "steeringTakeover": 8,
     "uncomfortableBrake1": 19,
     "unnecessaryBrake": 5,
-    "stopFailure": 0
+    "stopFailure": 0,
+    "mrm": 1
   },
   {
     "date": "2026-01-11T11:28:15+09:00",
@@ -957,7 +964,8 @@
     "steeringTakeover": 14,
     "uncomfortableBrake1": 16,
     "unnecessaryBrake": 8,
-    "stopFailure": 2
+    "stopFailure": 2,
+    "mrm": 0
   },
   {
     "date": "2026-01-11T13:42:08+09:00",
@@ -969,6 +977,7 @@
     "steeringTakeover": 23,
     "uncomfortableBrake1": 22,
     "unnecessaryBrake": 0,
-    "stopFailure": 2
+    "stopFailure": 2,
+    "mrm": 0
   }
 ]
