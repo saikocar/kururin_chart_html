@@ -7,7 +7,8 @@
     "bothAutoDistance": 28606.54324115529,
     "pedalTakeover": 81,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-07T13:43:14+09:00",
@@ -17,7 +18,8 @@
     "bothAutoDistance": 23822.13618191371,
     "pedalTakeover": 58,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-14T13:43:04+09:00",
@@ -27,7 +29,8 @@
     "bothAutoDistance": 28611.521291491845,
     "pedalTakeover": 57,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-15T11:25:02+09:00",
@@ -37,7 +40,8 @@
     "bothAutoDistance": 26188.996192332328,
     "pedalTakeover": 80,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-15T13:45:58+09:00",
@@ -47,7 +51,8 @@
     "bothAutoDistance": 29941.19524841718,
     "pedalTakeover": 82,
     "steeringTakeover": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-21T11:24:02+09:00",
@@ -57,7 +62,8 @@
     "bothAutoDistance": 27031.121225784293,
     "pedalTakeover": 134,
     "steeringTakeover": 29,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-21T13:45:37+09:00",
@@ -67,7 +73,8 @@
     "bothAutoDistance": 29223.472114400196,
     "pedalTakeover": 119,
     "steeringTakeover": 26,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-22T11:21:29+09:00",
@@ -77,7 +84,8 @@
     "bothAutoDistance": 25008.280751432314,
     "pedalTakeover": 101,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-22T13:42:54+09:00",
@@ -87,7 +95,8 @@
     "bothAutoDistance": 28162.48799451274,
     "pedalTakeover": 85,
     "steeringTakeover": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-06-29T11:28:00+09:00",
@@ -97,7 +106,8 @@
     "bothAutoDistance": 28497.959904045816,
     "pedalTakeover": 82,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-05T11:25:56+09:00",
@@ -107,7 +117,8 @@
     "bothAutoDistance": 24621.247981659362,
     "pedalTakeover": 135,
     "steeringTakeover": 38,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-05T13:45:40+09:00",
@@ -117,7 +128,8 @@
     "bothAutoDistance": 30782.08709762158,
     "pedalTakeover": 84,
     "steeringTakeover": 24,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-06T11:23:58+09:00",
@@ -127,7 +139,8 @@
     "bothAutoDistance": 30492.693602893054,
     "pedalTakeover": 92,
     "steeringTakeover": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-06T13:47:54+09:00",
@@ -137,7 +150,8 @@
     "bothAutoDistance": 31059.455932841796,
     "pedalTakeover": 80,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-12T11:25:23+09:00",
@@ -147,7 +161,8 @@
     "bothAutoDistance": 31873.29109142803,
     "pedalTakeover": 63,
     "steeringTakeover": 36,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-12T13:48:11+09:00",
@@ -157,7 +172,8 @@
     "bothAutoDistance": 31813.03924761391,
     "pedalTakeover": 63,
     "steeringTakeover": 27,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-19T11:26:59+09:00",
@@ -167,7 +183,8 @@
     "bothAutoDistance": 31186.925059015288,
     "pedalTakeover": 55,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-19T13:41:15+09:00",
@@ -177,7 +194,8 @@
     "bothAutoDistance": 33102.5814679663,
     "pedalTakeover": 50,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-20T13:42:28+09:00",
@@ -187,7 +205,8 @@
     "bothAutoDistance": 31498.916978210487,
     "pedalTakeover": 58,
     "steeringTakeover": 13,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-27T11:30:46+09:00",
@@ -197,7 +216,8 @@
     "bothAutoDistance": 32196.45845477722,
     "pedalTakeover": 49,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-07-27T13:41:45+09:00",
@@ -207,7 +227,8 @@
     "bothAutoDistance": 33230.24392847741,
     "pedalTakeover": 44,
     "steeringTakeover": 13,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-02T11:24:21+09:00",
@@ -217,7 +238,8 @@
     "bothAutoDistance": 31767.664372034407,
     "pedalTakeover": 55,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-02T13:44:11+09:00",
@@ -227,7 +249,8 @@
     "bothAutoDistance": 33704.47736495782,
     "pedalTakeover": 37,
     "steeringTakeover": 20,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-03T11:21:41+09:00",
@@ -237,7 +260,8 @@
     "bothAutoDistance": 31406.39159098359,
     "pedalTakeover": 75,
     "steeringTakeover": 34,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-03T13:39:28+09:00",
@@ -247,7 +271,8 @@
     "bothAutoDistance": 33099.87107844024,
     "pedalTakeover": 39,
     "steeringTakeover": 25,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-10T11:28:35+09:00",
@@ -257,7 +282,8 @@
     "bothAutoDistance": 29641.961621699527,
     "pedalTakeover": 76,
     "steeringTakeover": 30,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-10T13:39:34+09:00",
@@ -267,7 +293,8 @@
     "bothAutoDistance": 30079.191065481908,
     "pedalTakeover": 83,
     "steeringTakeover": 28,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-16T11:19:11+09:00",
@@ -277,7 +304,8 @@
     "bothAutoDistance": 31466.895348750608,
     "pedalTakeover": 83,
     "steeringTakeover": 25,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-16T13:42:46+09:00",
@@ -287,7 +315,8 @@
     "bothAutoDistance": 31725.54957405821,
     "pedalTakeover": 70,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-17T11:20:45+09:00",
@@ -297,7 +326,8 @@
     "bothAutoDistance": 30507.448917824113,
     "pedalTakeover": 101,
     "steeringTakeover": 28,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-17T13:43:29+09:00",
@@ -307,7 +337,8 @@
     "bothAutoDistance": 30161.746072754584,
     "pedalTakeover": 56,
     "steeringTakeover": 32,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-23T11:22:39+09:00",
@@ -317,7 +348,8 @@
     "bothAutoDistance": 28029.36472807503,
     "pedalTakeover": 43,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-23T13:44:01+09:00",
@@ -327,7 +359,8 @@
     "bothAutoDistance": 27303.037594734327,
     "pedalTakeover": 55,
     "steeringTakeover": 20,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-24T11:17:34+09:00",
@@ -337,7 +370,8 @@
     "bothAutoDistance": 33332.23002088422,
     "pedalTakeover": 41,
     "steeringTakeover": 23,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-24T13:42:58+09:00",
@@ -347,7 +381,8 @@
     "bothAutoDistance": 33868.47649695511,
     "pedalTakeover": 37,
     "steeringTakeover": 14,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-30T11:29:09+09:00",
@@ -357,7 +392,8 @@
     "bothAutoDistance": 33655.340317351125,
     "pedalTakeover": 21,
     "steeringTakeover": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-30T13:44:26+09:00",
@@ -367,7 +403,8 @@
     "bothAutoDistance": 31172.60468312636,
     "pedalTakeover": 43,
     "steeringTakeover": 20,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-31T11:23:05+09:00",
@@ -377,7 +414,8 @@
     "bothAutoDistance": 32196.051362142458,
     "pedalTakeover": 68,
     "steeringTakeover": 24,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-08-31T13:43:09+09:00",
@@ -387,7 +425,8 @@
     "bothAutoDistance": 34029.52020954099,
     "pedalTakeover": 34,
     "steeringTakeover": 14,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-06T11:23:39+09:00",
@@ -397,7 +436,8 @@
     "bothAutoDistance": 32622.6205843164,
     "pedalTakeover": 41,
     "steeringTakeover": 29,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-06T13:44:16+09:00",
@@ -407,7 +447,8 @@
     "bothAutoDistance": 28761.592021246433,
     "pedalTakeover": 70,
     "steeringTakeover": 31,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-07T13:41:32+09:00",
@@ -417,7 +458,8 @@
     "bothAutoDistance": 32192.948710856253,
     "pedalTakeover": 47,
     "steeringTakeover": 27,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-13T11:21:06+09:00",
@@ -427,7 +469,8 @@
     "bothAutoDistance": 28480.243466236352,
     "pedalTakeover": 57,
     "steeringTakeover": 26,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-13T13:43:44+09:00",
@@ -437,7 +480,8 @@
     "bothAutoDistance": 33420.31098897146,
     "pedalTakeover": 47,
     "steeringTakeover": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-14T11:21:06+09:00",
@@ -447,7 +491,8 @@
     "bothAutoDistance": 32584.798362565805,
     "pedalTakeover": 70,
     "steeringTakeover": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-14T13:40:26+09:00",
@@ -457,7 +502,8 @@
     "bothAutoDistance": 30982.605963554368,
     "pedalTakeover": 58,
     "steeringTakeover": 24,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-20T11:20:10+09:00",
@@ -467,7 +513,8 @@
     "bothAutoDistance": 30391.088709595042,
     "pedalTakeover": 49,
     "steeringTakeover": 37,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-20T13:42:32+09:00",
@@ -477,7 +524,8 @@
     "bothAutoDistance": 32596.95150438728,
     "pedalTakeover": 45,
     "steeringTakeover": 26,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-21T11:22:47+09:00",
@@ -487,7 +535,8 @@
     "bothAutoDistance": 32024.536073651525,
     "pedalTakeover": 52,
     "steeringTakeover": 36,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-21T13:40:47+09:00",
@@ -497,7 +546,8 @@
     "bothAutoDistance": 32991.94114919162,
     "pedalTakeover": 54,
     "steeringTakeover": 23,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-27T11:25:11+09:00",
@@ -507,7 +557,8 @@
     "bothAutoDistance": 31794.60672693167,
     "pedalTakeover": 54,
     "steeringTakeover": 29,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-27T13:48:03+09:00",
@@ -517,7 +568,8 @@
     "bothAutoDistance": 33004.440431108385,
     "pedalTakeover": 36,
     "steeringTakeover": 31,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-28T11:25:30+09:00",
@@ -527,7 +579,8 @@
     "bothAutoDistance": 31440.287686827476,
     "pedalTakeover": 33,
     "steeringTakeover": 26,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-09-28T13:37:57+09:00",
@@ -537,7 +590,8 @@
     "bothAutoDistance": 33371.36944288925,
     "pedalTakeover": 40,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-04T11:23:21+09:00",
@@ -547,7 +601,8 @@
     "bothAutoDistance": 30392.699667609326,
     "pedalTakeover": 46,
     "steeringTakeover": 23,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-04T13:43:05+09:00",
@@ -557,7 +612,8 @@
     "bothAutoDistance": 32278.15365265882,
     "pedalTakeover": 50,
     "steeringTakeover": 24,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-05T11:20:48+09:00",
@@ -567,7 +623,8 @@
     "bothAutoDistance": 29823.644109951696,
     "pedalTakeover": 118,
     "steeringTakeover": 31,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-05T13:43:35+09:00",
@@ -577,7 +634,8 @@
     "bothAutoDistance": 33161.19786319724,
     "pedalTakeover": 49,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-11T11:22:39+09:00",
@@ -587,7 +645,8 @@
     "bothAutoDistance": 33674.38912020955,
     "pedalTakeover": 29,
     "steeringTakeover": 18,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-11T13:48:11+09:00",
@@ -597,7 +656,8 @@
     "bothAutoDistance": 33903.10299103111,
     "pedalTakeover": 32,
     "steeringTakeover": 14,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-12T11:23:58+09:00",
@@ -607,7 +667,8 @@
     "bothAutoDistance": 34145.31510947143,
     "pedalTakeover": 34,
     "steeringTakeover": 15,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-12T13:40:50+09:00",
@@ -617,7 +678,8 @@
     "bothAutoDistance": 34272.70173128853,
     "pedalTakeover": 33,
     "steeringTakeover": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-19T11:19:48+09:00",
@@ -627,7 +689,8 @@
     "bothAutoDistance": 32098.22795247009,
     "pedalTakeover": 38,
     "steeringTakeover": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-19T13:40:36+09:00",
@@ -637,7 +700,8 @@
     "bothAutoDistance": 34128.73540946778,
     "pedalTakeover": 29,
     "steeringTakeover": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-25T11:18:52+09:00",
@@ -647,7 +711,8 @@
     "bothAutoDistance": 31166.345255743727,
     "pedalTakeover": 53,
     "steeringTakeover": 32,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-25T13:41:26+09:00",
@@ -657,7 +722,8 @@
     "bothAutoDistance": 32786.847429701724,
     "pedalTakeover": 56,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-26T11:29:33+09:00",
@@ -667,7 +733,8 @@
     "bothAutoDistance": 32415.145050414652,
     "pedalTakeover": 55,
     "steeringTakeover": 22,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-10-26T13:42:49+09:00",
@@ -677,7 +744,8 @@
     "bothAutoDistance": 33218.96325935556,
     "pedalTakeover": 59,
     "steeringTakeover": 27,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-01T11:16:29+09:00",
@@ -687,7 +755,8 @@
     "bothAutoDistance": 4707.288227044856,
     "pedalTakeover": 37,
     "steeringTakeover": 33,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-01T14:01:48+09:00",
@@ -697,7 +766,8 @@
     "bothAutoDistance": 16834.765351693615,
     "pedalTakeover": 110,
     "steeringTakeover": 10,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-02T11:22:59+09:00",
@@ -707,7 +777,8 @@
     "bothAutoDistance": 32746.342791010247,
     "pedalTakeover": 66,
     "steeringTakeover": 35,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-02T13:42:31+09:00",
@@ -717,7 +788,8 @@
     "bothAutoDistance": 26511.836445730674,
     "pedalTakeover": 36,
     "steeringTakeover": 19,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-08T11:26:26+09:00",
@@ -727,7 +799,8 @@
     "bothAutoDistance": 26285.14012575692,
     "pedalTakeover": 136,
     "steeringTakeover": 43,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-08T13:51:01+09:00",
@@ -737,7 +810,8 @@
     "bothAutoDistance": 31051.200761522712,
     "pedalTakeover": 64,
     "steeringTakeover": 31,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-09T11:20:13+09:00",
@@ -747,7 +821,8 @@
     "bothAutoDistance": 31511.71293584365,
     "pedalTakeover": 59,
     "steeringTakeover": 12,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-09T13:45:53+09:00",
@@ -757,7 +832,8 @@
     "bothAutoDistance": 33218.52399139741,
     "pedalTakeover": 35,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-15T11:20:53+09:00",
@@ -767,7 +843,8 @@
     "bothAutoDistance": 34062.93698015635,
     "pedalTakeover": 36,
     "steeringTakeover": 13,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-16T11:18:29+09:00",
@@ -777,7 +854,8 @@
     "bothAutoDistance": 33610.30982049469,
     "pedalTakeover": 44,
     "steeringTakeover": 16,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-16T13:39:55+09:00",
@@ -787,7 +865,8 @@
     "bothAutoDistance": 33694.074849188495,
     "pedalTakeover": 42,
     "steeringTakeover": 20,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-22T11:22:15+09:00",
@@ -797,7 +876,8 @@
     "bothAutoDistance": 33341.32606556675,
     "pedalTakeover": 74,
     "steeringTakeover": 17,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-22T13:41:54+09:00",
@@ -807,7 +887,8 @@
     "bothAutoDistance": 33542.6956175753,
     "pedalTakeover": 73,
     "steeringTakeover": 13,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-23T11:27:16+09:00",
@@ -817,7 +898,8 @@
     "bothAutoDistance": 34203.9174877663,
     "pedalTakeover": 27,
     "steeringTakeover": 15,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-23T13:36:34+09:00",
@@ -827,7 +909,8 @@
     "bothAutoDistance": 32776.13422278142,
     "pedalTakeover": 49,
     "steeringTakeover": 14,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-29T13:42:59+09:00",
@@ -837,7 +920,8 @@
     "bothAutoDistance": 33919.05738473023,
     "pedalTakeover": 53,
     "steeringTakeover": 16,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-30T11:21:47+09:00",
@@ -847,7 +931,8 @@
     "bothAutoDistance": 33742.44496837592,
     "pedalTakeover": 44,
     "steeringTakeover": 16,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-11-30T13:41:51+09:00",
@@ -857,7 +942,8 @@
     "bothAutoDistance": 33681.918854819116,
     "pedalTakeover": 49,
     "steeringTakeover": 16,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-07T11:20:46+09:00",
@@ -868,7 +954,8 @@
     "pedalTakeover": 75,
     "steeringTakeover": 31,
     "uncomfortableBrake1": 31,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-07T13:38:58+09:00",
@@ -879,7 +966,8 @@
     "pedalTakeover": 81,
     "steeringTakeover": 30,
     "uncomfortableBrake1": 26,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-13T13:49:19+09:00",
@@ -890,7 +978,8 @@
     "pedalTakeover": 41,
     "steeringTakeover": 17,
     "uncomfortableBrake1": 10,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-14T11:19:09+09:00",
@@ -901,7 +990,8 @@
     "pedalTakeover": 37,
     "steeringTakeover": 5,
     "uncomfortableBrake1": 6,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-14T13:36:21+09:00",
@@ -912,7 +1002,8 @@
     "pedalTakeover": 61,
     "steeringTakeover": 19,
     "uncomfortableBrake1": 21,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-20T11:23:04+09:00",
@@ -923,7 +1014,8 @@
     "pedalTakeover": 49,
     "steeringTakeover": 13,
     "uncomfortableBrake1": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-20T13:41:30+09:00",
@@ -934,7 +1026,8 @@
     "pedalTakeover": 40,
     "steeringTakeover": 12,
     "uncomfortableBrake1": 29,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-21T11:20:27+09:00",
@@ -948,7 +1041,8 @@
     "unnecessaryBrake": 1,
     "stopFailure": 2,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-21T13:39:59+09:00",
@@ -962,7 +1056,8 @@
     "unnecessaryBrake": 0,
     "stopFailure": 0,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-27T13:45:19+09:00",
@@ -976,7 +1071,8 @@
     "unnecessaryBrake": 3,
     "stopFailure": 0,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-28T11:24:33+09:00",
@@ -990,7 +1086,8 @@
     "unnecessaryBrake": 1,
     "stopFailure": 1,
     "mrm": 1,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2025-12-28T13:41:26+09:00",
@@ -1004,7 +1101,8 @@
     "unnecessaryBrake": 0,
     "stopFailure": 0,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-04T11:19:10+09:00",
@@ -1015,7 +1113,8 @@
     "pedalTakeover": 98,
     "steeringTakeover": 10,
     "uncomfortableBrake1": 11,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-04T13:41:36+09:00",
@@ -1026,7 +1125,8 @@
     "pedalTakeover": 44,
     "steeringTakeover": 7,
     "uncomfortableBrake1": 29,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-10T11:29:47+09:00",
@@ -1040,7 +1140,8 @@
     "unnecessaryBrake": 2,
     "stopFailure": 4,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-10T13:43:23+09:00",
@@ -1054,7 +1155,8 @@
     "unnecessaryBrake": 5,
     "stopFailure": 0,
     "mrm": 1,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-11T11:28:15+09:00",
@@ -1068,7 +1170,8 @@
     "unnecessaryBrake": 8,
     "stopFailure": 2,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   },
   {
     "date": "2026-01-11T13:42:08+09:00",
@@ -1082,6 +1185,7 @@
     "unnecessaryBrake": 0,
     "stopFailure": 2,
     "mrm": 0,
-    "uncomfortableBrake2": null
+    "uncomfortableBrake2": null,
+    "interventionBrake": null
   }
 ]
