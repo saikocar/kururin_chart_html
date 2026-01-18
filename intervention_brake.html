@@ -34,11 +34,18 @@
             const dateLabels = automationData.map(item => new Date(item.date));
             const chartDatasets = [
                 {
-                    label: '介入時急ブレーキ',
-                    dataField: 'interventionBrake',
-                    data: automationData.map(item => item.interventionBrake),
+                    label: '介入時急ブレーキ(0.25G)',
+                    dataField: 'interventionBrake1',
+                    data: automationData.map(item => item.interventionBrake1),
                     borderColor: 'rgb(51, 153, 51)',
                     backgroundColor: 'rgba(51, 153, 51, 0.3)',
+                },
+                {
+                    label: '介入時急ブレーキ(0.35G)',
+                    dataField: 'interventionBrake2',
+                    data: automationData.map(item => item.interventionBrake2),
+                    borderColor: 'rgb(51, 51, 153)',
+                    backgroundColor: 'rgba(51, 51, 153, 0.3)',
                 },
             ];
 
