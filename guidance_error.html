@@ -79,22 +79,8 @@
             const csvUrl = './displacement.csv';
 
             // CSVをフェッチ
-            const response = await fetch('file://' + csvUrl).catch(() => null);
-            let csvText;
-
-            // ローカルファイルの場合はXHRで取得を試みる
-            if (!response || !response.ok) {
-                // CSVデータを直接埋め込む方式に変更
-                csvText = await new Promise((resolve, reject) => {
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('GET', '誘導誤差.csv', true);
-                    xhr.onload = () => resolve(xhr.responseText);
-                    xhr.onerror = () => reject(new Error('Failed to load CSV'));
-                    xhr.send();
-                });
-            } else {
-                csvText = await response.text();
-            }
+            const response = await fetch(csvUrl);
+            const csvText = await response.text();
 
             // CSV解析
             const lines = csvText.trim().split('\n');
