@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>誘導誤差グラフ</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-sizing: border-box;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            gap: 20px;
+        }
+        .chart-container {
+            position: relative;
+            flex: 1;
+            min-height: 0;
+            box-sizing: border-box;
+        }
+        h2 {
+            margin: 0 0 10px 0;
+            font-family: sans-serif;
+            color: #333;
+        }
+        .chart-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-height: 0;
+        }
+        .controls {
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+        .controls label {
+            margin-right: 15px;
+        }
+        .controls select {
+            padding: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="chart-wrapper">
+            <h2>誘導誤差推移</h2>
+            <div class="controls">
+                <label>
+                    表示データ:
+                    <select id="dataSelect">
+                        <option value="all">全て表示</option>
+                        <option value="latest5" selected>最新5件</option>
+                        <option value="latest10">最新10件</option>
+                    </select>
+                </label>
+            </div>
+            <div class="chart-container">
+                <canvas id="guidanceErrorChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        (async () => {
+            const csvUrl = './displacement.csv';
+
+            // CSVをフェッチ
+            const response = await fetch(csvUrl);
+            const csvText = await response.text();
+
+            // CSV解析
+            const lines = csvText.trim().split('\n');
+            const headers = lines[0].split(',');
+            const indices = headers.slice(1).map(h => parseInt(h));
+
+            const data = lines.slice(1).map(line => {
+                const values = line.split(',');
+                return {
+                    timestamp: values[0],
+                    errors: values.slice(1).map(v => parseFloat(v))
+                };
+            });
+
+            // 色を生成
+            function generateColor(index, total) {
+                const hue = (index / total) * 360;
+                return `hsl(${hue}, 70%, 50%)`;
+            }
+
+            const longFormatter = new Intl.DateTimeFormat(undefined, {
+                year: 'numeric', month: 'long', day: 'numeric',
+                hour: 'numeric', minute: 'numeric'
+            });
+            const shortFormatter = new Intl.DateTimeFormat(undefined, {
+                month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+            });
+
+            let chart = null;
+
+            function createChart(filteredData) {
+                const datasets = filteredData.map((item, i) => ({
+                    label: shortFormatter.format(new Date(item.timestamp)),
+                    data: item.errors,
+                    borderColor: generateColor(i, filteredData.length),
+                    backgroundColor: 'transparent',
+                    borderWidth: 1.5,
+                    pointRadius: 0,
+                    tension: 0.1
+                }));
+
+                if (chart) {
+                    chart.destroy();
+                }
+
+                chart = new Chart(document.getElementById('guidanceErrorChart'), {
+                    type: 'line',
+                    data: {
+                        labels: indices,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    boxWidth: 20,
+                                    font: { size: 10 }
+                                }
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false,
+                                callbacks: {
+                                    title: items => `インデックス: ${items[0].label}`,
+                                    label: item => {
+                                        const datasetIndex = item.datasetIndex;
+                                        const originalData = filteredData[datasetIndex];
+                                        const fullTimestamp = longFormatter.format(new Date(originalData.timestamp));
+                                        return `${fullTimestamp}: ${item.formattedValue}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'インデックス'
+                                },
+                                ticks: {
+                                    callback: (value, index) => {
+                                        // 10個おきに表示
+                                        if (index % 10 === 0) return indices[index];
+                                        return '';
+                                    }
+                                }
+                            },
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: '誘導誤差'
+                                },
+                                ticks: {
+                                    callback: value => value.toFixed(2)
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 初期表示
+            function updateChart(mode) {
+                let filteredData;
+                switch (mode) {
+                    case 'latest5':
+                        filteredData = data.slice(0, 5);
+                        break;
+                    case 'latest10':
+                        filteredData = data.slice(0, 10);
+                        break;
+                    default:
+                        filteredData = data;
+                }
+                createChart(filteredData);
+            }
+
+            updateChart('latest5');
+
+            // セレクトボックスのイベント
+            document.getElementById('dataSelect').addEventListener('change', (e) => {
+                updateChart(e.target.value);
+            });
+        })();
+    </script>
+</body>
+</html>

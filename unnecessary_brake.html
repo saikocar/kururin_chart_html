@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>介入率推移グラフ</title>
+    <title>不必要なブレーキ・停止回数グラフ（主観評価）</title>
     <style>
         html, body {
             margin: 0;
@@ -34,33 +34,26 @@
             const dateLabels = automationData.map(item => new Date(item.date));
             const chartDatasets = [
                 {
-                    label: 'ペダル介入率',
-                    dataField: 'pedalTakeover',
-                    data: automationData.map(item => item.pedalTakeover / item.totalDistance * 1000),
-                    borderColor: 'rgb(204, 102, 0)',
-                    backgroundColor: 'rgba(204, 102, 0, 0.3)',
+                    label: '不必要なブレーキ・停止回数（主観評価）',
+                    dataField: 'unnecessaryBrake',
+                    data: automationData.map(item => item.unnecessaryBrake || null),
+                    borderColor: 'rgb(255, 153, 0)',
+                    backgroundColor: 'rgba(255, 153, 0, 0.8)',
                 },
                 {
-                    label: 'ハンドル介入率',
-                    dataField: 'steeringTakeover',
-                    data: automationData.map(item => item.steeringTakeover / item.totalDistance * 1000),
-                    borderColor: 'rgb(0, 102, 204)',
-                    backgroundColor: 'rgba(0, 102, 204, 0.3)',
+                    label: '停車失敗（主観評価、近すぎて介入など）',
+                    dataField: 'stopFailure',
+                    data: automationData.map(item => item.stopFailure || null),
+                    borderColor: 'rgb(220, 53, 69)',
+                    backgroundColor: 'rgba(220, 53, 69, 0.8)',
                 },
-                {
-                    label: 'アクセル介入率',
-                    dataField: 'accelTakeover',
-                    data: automationData.map(item => (item.accelTakeover ?? 0) / item.totalDistance * 1000),
-                    borderColor: 'rgb(0, 153, 76)',
-                    backgroundColor: 'rgba(0, 153, 76, 0.3)',
-                }
             ];
 
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
             new Chart(document.getElementById('lineChart'), {
-                type: 'line',
+                type: 'bar',
                 data: {
                     labels: dateLabels,
                     datasets: chartDatasets
@@ -75,12 +68,6 @@
                                 title: tooltipItems => {
                                     const date = dateLabels[tooltipItems[0].dataIndex];
                                     return longDateFormatter.format(date);
-                                },
-                                label: tooltipItem => {
-                                    const dataItem = automationData[tooltipItem.dataIndex];
-                                    const takeoverCount = dataItem[tooltipItem.dataset.dataField];
-                                    const totalDistanceKm = (dataItem.totalDistance / 1000).toFixed(1);
-                                    return `${tooltipItem.dataset.label}: ${tooltipItem.formattedValue}回/km (${takeoverCount}回 / ${totalDistanceKm}km)`;
                                 }
                             }
                         }
@@ -92,10 +79,7 @@
                             }
                         },
                         y: {
-                            beginAtZero: true,
-                            ticks: {
-                                callback: value => `${value}回/km`
-                            },
+                            beginAtZero: true
                         }
                     }
                 }
