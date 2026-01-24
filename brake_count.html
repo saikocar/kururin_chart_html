@@ -41,6 +41,13 @@
                     backgroundColor: 'rgba(204, 51, 51, 0.3)',
                 },
                 {
+                    label: '急ブレーキ回数(0.3G)',
+                    dataField: 'uncomfortableBrake1_5',
+                    data: automationData.map(item => item.uncomfortableBrake1_5 != null ? item.uncomfortableBrake1_5 : null),
+                    borderColor: 'rgb(204, 102, 51)',
+                    backgroundColor: 'rgba(204, 102, 51, 0.3)',
+                },
+                {
                     label: '急ブレーキ回数(0.35G)',
                     dataField: 'uncomfortableBrake2',
                     data: automationData.map(item => item.uncomfortableBrake2),

@@ -41,6 +41,13 @@
                     backgroundColor: 'rgba(51, 153, 51, 0.3)',
                 },
                 {
+                    label: '介入時急ブレーキ(0.3G)',
+                    dataField: 'interventionBrake1_5',
+                    data: automationData.map(item => item.interventionBrake1_5 != null ? item.interventionBrake1_5 : null),
+                    borderColor: 'rgb(51, 153, 153)',
+                    backgroundColor: 'rgba(51, 153, 153, 0.3)',
+                },
+                {
                     label: '介入時急ブレーキ(0.35G)',
                     dataField: 'interventionBrake2',
                     data: automationData.map(item => item.interventionBrake2),
