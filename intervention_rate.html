@@ -50,7 +50,7 @@
                 {
                     label: 'アクセル介入率',
                     dataField: 'accelTakeover',
-                    data: automationData.map(item => (item.accelTakeover ?? 0) / item.totalDistance * 1000),
+                    data: automationData.map(item => item.accelTakeover != null ? item.accelTakeover / item.totalDistance * 1000 : null),
                     borderColor: 'rgb(0, 153, 76)',
                     backgroundColor: 'rgba(0, 153, 76, 0.3)',
                 }

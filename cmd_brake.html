@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>介入時急ブレーキ回数グラフ</title>
+    <title>指令加速度による急ブレーキ回数グラフ</title>
     <style>
         html, body {
             margin: 0;
@@ -34,25 +34,25 @@
             const dateLabels = automationData.map(item => new Date(item.date));
             const chartDatasets = [
                 {
-                    label: '介入時急ブレーキ(0.25G)',
-                    dataField: 'interventionBrake1',
-                    data: automationData.map(item => item.interventionBrake1),
-                    borderColor: 'rgb(51, 153, 51)',
-                    backgroundColor: 'rgba(51, 153, 51, 0.3)',
+                    label: '指令急ブレーキ(0.25G)',
+                    dataField: 'cmdBrake1',
+                    data: automationData.map(item => item.cmdBrake1 != null ? item.cmdBrake1 : null),
+                    borderColor: 'rgb(51, 102, 204)',
+                    backgroundColor: 'rgba(51, 102, 204, 0.3)',
                 },
                 {
-                    label: '介入時急ブレーキ(0.3G)',
-                    dataField: 'interventionBrake1_5',
-                    data: automationData.map(item => item.interventionBrake1_5 != null ? item.interventionBrake1_5 : null),
+                    label: '指令急ブレーキ(0.3G)',
+                    dataField: 'cmdBrake1_5',
+                    data: automationData.map(item => item.cmdBrake1_5 != null ? item.cmdBrake1_5 : null),
                     borderColor: 'rgb(51, 153, 153)',
                     backgroundColor: 'rgba(51, 153, 153, 0.3)',
                 },
                 {
-                    label: '介入時急ブレーキ(0.35G)',
-                    dataField: 'interventionBrake2',
-                    data: automationData.map(item => item.interventionBrake2),
-                    borderColor: 'rgb(51, 51, 153)',
-                    backgroundColor: 'rgba(51, 51, 153, 0.3)',
+                    label: '指令急ブレーキ(0.35G)',
+                    dataField: 'cmdBrake2',
+                    data: automationData.map(item => item.cmdBrake2 != null ? item.cmdBrake2 : null),
+                    borderColor: 'rgb(102, 51, 153)',
+                    backgroundColor: 'rgba(102, 51, 153, 0.3)',
                 },
             ];
 
