@@ -77,6 +77,11 @@
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
+            // データポイントのインデックスを日付から探す
+            const findDataIndex = (timestamp) => {
+                return automationData.findIndex(item => new Date(item.date).getTime() === timestamp);
+            };
+
             new Chart(document.getElementById('lineChart'), {
                 type: 'scatter',
                 data: {
@@ -91,7 +96,10 @@
                             callbacks: {
                                 title: tooltipItems => {
                                     const date = new Date(tooltipItems[0].parsed.x);
-                                    return longDateFormatter.format(date);
+                                    const idx = findDataIndex(date.getTime());
+                                    const item = idx >= 0 ? automationData[idx] : null;
+                                    const titleStr = longDateFormatter.format(date);
+                                    return item && item.note ? `${titleStr}\n📝 ${item.note}` : titleStr;
                                 },
                                 label: tooltipItem => {
                                     const delay = tooltipItem.parsed.y;

@@ -59,6 +59,15 @@
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
+            const formatXLabel = (index) => {
+                const date = dateLabels[index];
+                const item = automationData[index];
+                const dateStr = shortDateFormatter.format(date);
+                const ampm = date.getHours() < 12 ? 'AM' : 'PM';
+                const note = item.note ? ` ${item.note}` : '';
+                return `${dateStr} ${ampm}${note}`;
+            };
+
             new Chart(document.getElementById('lineChart'), {
                 type: 'line',
                 data: {
@@ -73,8 +82,11 @@
                             mode: 'index',
                             callbacks: {
                                 title: tooltipItems => {
-                                    const date = dateLabels[tooltipItems[0].dataIndex];
-                                    return longDateFormatter.format(date);
+                                    const idx = tooltipItems[0].dataIndex;
+                                    const date = dateLabels[idx];
+                                    const item = automationData[idx];
+                                    const titleStr = longDateFormatter.format(date);
+                                    return item.note ? `${titleStr}\n📝 ${item.note}` : titleStr;
                                 },
                                 label: tooltipItem => {
                                     const dataItem = automationData[tooltipItem.dataIndex];
@@ -88,7 +100,7 @@
                     scales: {
                         x: {
                             ticks: {
-                                callback: (value, index, ticks) => shortDateFormatter.format(dateLabels[index])
+                                callback: (value, index, ticks) => formatXLabel(index)
                             }
                         },
                         y: {
