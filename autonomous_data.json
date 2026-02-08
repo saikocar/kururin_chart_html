@@ -1606,7 +1606,8 @@
     "cmdBrake2": 0,
     "unnecessaryBrake": 0,
     "stopFailure": 0,
-    "mrm": 0
+    "mrm": 0,
+    "note": "雪"
   },
   {
     "date": "2026-02-08T13:35:34+09:00",
@@ -1628,6 +1629,7 @@
     "cmdBrake2": 5,
     "unnecessaryBrake": 0,
     "stopFailure": 0,
-    "mrm": 0
+    "mrm": 0,
+    "note": "雪"
   }
 ]
