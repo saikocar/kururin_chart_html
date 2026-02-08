@@ -46,6 +46,13 @@
                     data: automationData.map(item => item.steeringTakeover / item.totalDistance * 1000),
                     borderColor: 'rgb(0, 102, 204)',
                     backgroundColor: 'rgba(0, 102, 204, 0.3)',
+                },
+                {
+                    label: 'アクセル介入率',
+                    dataField: 'accelTakeover',
+                    data: automationData.map(item => item.accelTakeover != null ? item.accelTakeover / item.totalDistance * 1000 : null),
+                    borderColor: 'rgb(0, 153, 76)',
+                    backgroundColor: 'rgba(0, 153, 76, 0.3)',
                 }
             ];
 
