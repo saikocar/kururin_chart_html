@@ -1607,7 +1607,7 @@
     "unnecessaryBrake": 0,
     "stopFailure": 0,
     "mrm": 0,
-    "note": "雪"
+    "note": "\u96ea"
   },
   {
     "date": "2026-02-08T13:35:34+09:00",
@@ -1630,6 +1630,28 @@
     "unnecessaryBrake": 0,
     "stopFailure": 0,
     "mrm": 0,
-    "note": "雪"
+    "note": "\u96ea"
+  },
+  {
+    "date": "2026-02-14T11:24:32+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 32604.526317773692,
+    "steeringAutoDistance": 33499.38725773393,
+    "bothAutoDistance": 32596.026298051012,
+    "pedalTakeover": 98,
+    "steeringTakeover": 26,
+    "uncomfortableBrake1": 38,
+    "uncomfortableBrake1_5": 14,
+    "uncomfortableBrake2": 2,
+    "interventionBrake1": 13,
+    "interventionBrake1_5": 4,
+    "interventionBrake2": 0,
+    "accelTakeover": 121,
+    "cmdBrake1": 119,
+    "cmdBrake1_5": 99,
+    "cmdBrake2": 21,
+    "unnecessaryBrake": 0,
+    "stopFailure": 0,
+    "mrm": 0
   }
 ]
