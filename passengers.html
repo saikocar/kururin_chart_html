@@ -55,7 +55,7 @@
             const totalAm = totalSince.reduce((sum, item) => sum + (item.am ?? 0), 0);
             const totalPm = totalSince.reduce((sum, item) => sum + (item.pm ?? 0), 0);
             document.getElementById('totalBox').innerHTML =
-                `2025.4.12以降の乗車人数合計: <span class="total-count">${totalCount}人</span><br>（午前 ${totalAm}人・午後 ${totalPm}人）`;
+                `2025.4.12以降の乗車人数（土日限定）合計: <span class="total-count">${totalCount}人</span><br>（午前 ${totalAm}人・午後 ${totalPm}人）`;
 
             const passengerData = allPassengerData.slice(-40);
             const dateLabels = passengerData.map(item => new Date(item.date));
