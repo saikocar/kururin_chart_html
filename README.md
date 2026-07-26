@@ -13,6 +13,8 @@
 | ファイル | 説明 |
 |---------|------|
 | autonomous_data.json | 自動運転データ（JSON形式） |
+| passenger_data.json | 乗車人数データ（JSON形式） |
+| convert_passenger_data.py | 中瀬集計.xlsx から passenger_data.json を生成するスクリプト |
 | autonomy_rate.html | 自律率グラフ |
 | brake_count.html | ブレーキ回数グラフ |
 | cmd_brake.html | コマンドブレーキグラフ |
@@ -22,6 +24,7 @@
 | intervention_rate.html | 介入率グラフ |
 | intervention_rate_with_gaspedal.html | アクセル介入率グラフ |
 | mrm.html | MRMグラフ |
+| passengers.html | 乗車人数グラフ |
 | unnecessary_brake.html | 不要ブレーキグラフ |
 
 ## 開発フロー
