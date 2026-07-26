@@ -34,41 +34,40 @@
             const automationData = (await (await fetch('autonomous_data.json')).json()).slice(-40);
             const dateLabels = automationData.map(item => new Date(item.date));
 
-            // 到着遅延時間を計算（分単位）
-            const delayData = automationData.map((item, index) => {
+            // 到着遅延時間を計算（分単位）し、午前便・午後便に振り分ける
+            const morningDelayData = [];
+            const afternoonDelayData = [];
+            automationData.forEach((item, index) => {
                 const arrivalTime = new Date(item.date);
                 const hour = arrivalTime.getHours();
                 const minute = arrivalTime.getMinutes();
 
-                let scheduledMinute;
-                if (hour === 11) {
-                    // 午前便: 11:11着予定
-                    scheduledMinute = 11 * 60 + 11;
-                } else if (hour === 13) {
-                    // 午後便: 13:31着予定
-                    scheduledMinute = 13 * 60 + 31;
-                } else {
-                    // その他の時間帯は最も近い便で判定
-                    if (hour < 12) {
-                        scheduledMinute = 11 * 60 + 11;
-                    } else {
-                        scheduledMinute = 13 * 60 + 31;
-                    }
-                }
+                // 12時前は午前便(11:11着予定)、以降は午後便(13:31着予定)
+                const isMorning = hour < 12;
+                const scheduledMinute = isMorning ? 11 * 60 + 11 : 13 * 60 + 31;
 
                 const actualMinute = hour * 60 + minute;
-                return {
+                const point = {
                     x: dateLabels[index],
                     y: actualMinute - scheduledMinute
                 };
+                (isMorning ? morningDelayData : afternoonDelayData).push(point);
             });
 
             const chartDatasets = [
                 {
-                    label: '到着遅延時間',
-                    data: delayData,
-                    borderColor: 'rgb(153, 102, 255)',
-                    backgroundColor: 'rgba(153, 102, 255, 0.5)',
+                    label: '到着遅延時間（午前便）',
+                    data: morningDelayData,
+                    borderColor: 'rgb(204, 102, 0)',
+                    backgroundColor: 'rgba(204, 102, 0, 0.5)',
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                },
+                {
+                    label: '到着遅延時間（午後便）',
+                    data: afternoonDelayData,
+                    borderColor: 'rgb(0, 102, 204)',
+                    backgroundColor: 'rgba(0, 102, 204, 0.5)',
                     pointRadius: 5,
                     pointHoverRadius: 7,
                 }
