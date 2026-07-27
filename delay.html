@@ -103,7 +103,8 @@
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
             // 直近STATS_DAYS運行日ぶんの遅延を集計して左上に表示する
-            const STATS_DAYS = 10;
+            // （表示件数を超える分は自然に頭打ちになり、グラフ表示範囲全体の集計になる）
+            const STATS_DAYS = 40;
             const dayKey = date => `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
             const recentDays = new Set([...new Set(dateLabels.map(dayKey))].slice(-STATS_DAYS));
             const inRecent = point => recentDays.has(dayKey(new Date(point.x)));
