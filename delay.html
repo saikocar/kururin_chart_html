@@ -19,11 +19,35 @@
             height: 100%;
             box-sizing: border-box;
         }
+        .stats-box {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            z-index: 1;
+        }
+        .stats-box .stats-period {
+            font-size: 11px;
+            color: #555;
+        }
+        .stats-box .stats-morning {
+            color: rgb(163, 82, 0);
+        }
+        .stats-box .stats-afternoon {
+            color: rgb(0, 82, 163);
+        }
     </style>
 </head>
 <body>
     <div class="chart-container">
         <canvas id="lineChart"></canvas>
+        <div class="stats-box" id="statsBox"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -78,13 +102,57 @@
             const shortDateFormatter = new Intl.DateTimeFormat(undefined, {month: 'numeric', day: 'numeric'});
             const longDateFormatter = new Intl.DateTimeFormat(undefined, {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric'});
 
+            // 直近STATS_DAYS運行日ぶんの遅延を集計して左上に表示する
+            const STATS_DAYS = 10;
+            const dayKey = date => `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            const recentDays = new Set([...new Set(dateLabels.map(dayKey))].slice(-STATS_DAYS));
+            const inRecent = point => recentDays.has(dayKey(new Date(point.x)));
+
+            // 標本標準偏差（n-1）。データ1件以下ならnull
+            const summarize = data => {
+                const values = data.filter(inRecent).map(point => point.y);
+                if (values.length === 0) return null;
+                const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
+                const sd = values.length > 1
+                    ? Math.sqrt(values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1))
+                    : null;
+                return {count: values.length, mean, sd};
+            };
+
+            const formatStats = (name, stats) => {
+                if (!stats) return `${name}: データなし`;
+                const sign = stats.mean >= 0 ? '+' : '−';
+                const meanStr = `${sign}${Math.abs(stats.mean).toFixed(1)}分`;
+                const sdStr = stats.sd === null ? '—' : `${stats.sd.toFixed(1)}分`;
+                return `${name}: 平均 ${meanStr} ／ 標準偏差 ${sdStr}（n=${stats.count}）`;
+            };
+
+            const statsDates = dateLabels.filter(date => recentDays.has(dayKey(date)));
+            const periodStr = statsDates.length
+                ? `${shortDateFormatter.format(statsDates[0])}〜${shortDateFormatter.format(statsDates[statsDates.length - 1])}`
+                : '—';
+            const statsBox = document.getElementById('statsBox');
+            statsBox.innerHTML =
+                `<span class="stats-period">集計期間: ${periodStr}（直近${recentDays.size}運行日）</span><br>`
+                + `<span class="stats-morning">${formatStats('午前便', summarize(morningDelayData))}</span><br>`
+                + `<span class="stats-afternoon">${formatStats('午後便', summarize(afternoonDelayData))}</span>`;
+
             // データポイントのインデックスを日付から探す
             const findDataIndex = (timestamp) => {
                 return automationData.findIndex(item => new Date(item.date).getTime() === timestamp);
             };
 
+            // レジェンドの高さは凡例の折返しで変わるので、描画後に統計ボックスを直下へ寄せる
+            const statsBoxPlacer = {
+                id: 'statsBoxPlacer',
+                afterLayout: chart => {
+                    if (chart.legend) statsBox.style.top = `${chart.legend.bottom + 4}px`;
+                }
+            };
+
             new Chart(document.getElementById('lineChart'), {
                 type: 'scatter',
+                plugins: [statsBoxPlacer],
                 data: {
                     datasets: chartDatasets
                 },
