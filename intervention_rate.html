@@ -91,13 +91,14 @@
                 const sd = values.length > 1
                     ? Math.sqrt(values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1))
                     : null;
-                return {count: values.length, mean, sd};
+                const min = Math.min(...values);
+                return {count: values.length, mean, sd, min};
             };
 
             const formatStats = (name, stats) => {
                 if (!stats) return `${name}: データなし`;
                 const sdStr = stats.sd === null ? '—' : `${stats.sd.toFixed(2)}回/km`;
-                return `${name}: 平均 ${stats.mean.toFixed(2)}回/km ／ 標準偏差 ${sdStr}（n=${stats.count}）`;
+                return `${name}: 平均 ${stats.mean.toFixed(2)}回/km ／ 標準偏差 ${sdStr} ／ 最低 ${stats.min.toFixed(2)}回/km（n=${stats.count}）`;
             };
 
             const statsBox = document.getElementById('statsBox');

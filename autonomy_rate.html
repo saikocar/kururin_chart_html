@@ -93,13 +93,14 @@
                 const sd = values.length > 1
                     ? Math.sqrt(values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1))
                     : null;
-                return {count: values.length, mean, sd};
+                const max = Math.max(...values);
+                return {count: values.length, mean, sd, max};
             };
 
             const formatStats = (name, stats) => {
                 if (!stats) return `${name}: データなし`;
                 const sdStr = stats.sd === null ? '—' : `${stats.sd.toFixed(1)}%`;
-                return `${name}: 平均 ${stats.mean.toFixed(1)}% ／ 標準偏差 ${sdStr}（n=${stats.count}）`;
+                return `${name}: 平均 ${stats.mean.toFixed(1)}% ／ 標準偏差 ${sdStr} ／ 最高 ${stats.max.toFixed(1)}%（n=${stats.count}）`;
             };
 
             const statsBox = document.getElementById('statsBox');
