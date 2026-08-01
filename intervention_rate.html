@@ -19,11 +19,29 @@
             height: 100%;
             box-sizing: border-box;
         }
+        .stats-box {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            z-index: 1;
+        }
+        .stats-box .stats-period {
+            font-size: 11px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <div class="chart-container">
         <canvas id="lineChart"></canvas>
+        <div class="stats-box" id="statsBox"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -61,8 +79,40 @@
                 return `${dateStr} ${ampm}${note}`;
             };
 
-            new Chart(document.getElementById('lineChart'), {
+            // 表示範囲全体の平均・標準偏差を集計して左上に表示する
+            const dayKey = date => `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+            const runDays = new Set(dateLabels.map(dayKey)).size;
+
+            // 標本標準偏差（n-1）。データ1件以下ならnull
+            const summarize = data => {
+                const values = data.filter(value => value != null);
+                if (values.length === 0) return null;
+                const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
+                const sd = values.length > 1
+                    ? Math.sqrt(values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / (values.length - 1))
+                    : null;
+                return {count: values.length, mean, sd};
+            };
+
+            const formatStats = (name, stats) => {
+                if (!stats) return `${name}: データなし`;
+                const sdStr = stats.sd === null ? '—' : `${stats.sd.toFixed(2)}回/km`;
+                return `${name}: 平均 ${stats.mean.toFixed(2)}回/km ／ 標準偏差 ${sdStr}（n=${stats.count}）`;
+            };
+
+            const statsBox = document.getElementById('statsBox');
+
+            // レジェンドの高さは凡例の折返しで変わるので、描画後に統計ボックスを直下へ寄せる
+            const statsBoxPlacer = {
+                id: 'statsBoxPlacer',
+                afterLayout: chart => {
+                    if (chart.legend) statsBox.style.top = `${chart.legend.bottom + 4}px`;
+                }
+            };
+
+            const chart = new Chart(document.getElementById('lineChart'), {
                 type: 'line',
+                plugins: [statsBoxPlacer],
                 data: {
                     labels: dateLabels,
                     datasets: chartDatasets
@@ -105,6 +155,19 @@
                     }
                 }
             });
+
+            const periodStr = dateLabels.length
+                ? `${shortDateFormatter.format(dateLabels[0])}〜${shortDateFormatter.format(dateLabels[dateLabels.length - 1])}`
+                : '—';
+            const legendColor = index => {
+                const color = chart.legend?.legendItems?.[index]?.strokeStyle;
+                return typeof color === 'string' ? color : '#333';
+            };
+            statsBox.innerHTML =
+                `<span class="stats-period">集計期間: ${periodStr}（直近${runDays}運行日、${dateLabels.length}走行）</span>`
+                + chartDatasets.map((dataset, index) =>
+                    `<br><span style="color: ${legendColor(index)}">${formatStats(dataset.statsLabel ?? dataset.label, summarize(dataset.data))}</span>`
+                ).join('');
         })();
     </script>
 </body>
