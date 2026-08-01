@@ -134,7 +134,7 @@
                 : '—';
             const statsBox = document.getElementById('statsBox');
             statsBox.innerHTML =
-                `<span class="stats-period">集計期間: ${periodStr}（直近${recentDays.size}運行日）</span><br>`
+                `<span class="stats-period">集計期間: ${periodStr}（直近${recentDays.size}運行日、${statsDates.length}走行）</span><br>`
                 + `<span class="stats-morning">${formatStats('午前便', summarize(morningDelayData))}</span><br>`
                 + `<span class="stats-afternoon">${formatStats('午後便', summarize(afternoonDelayData))}</span>`;
 
