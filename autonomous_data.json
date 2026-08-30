@@ -3853,5 +3853,27 @@
     "unnecessaryBrake": 0,
     "stopFailure": 0,
     "mrm": 0
+  },
+  {
+    "date": "2026-08-30T11:18:53+09:00",
+    "totalDistance": 34910.98896134385,
+    "pedalAutoDistance": 33487.69280520919,
+    "steeringAutoDistance": 34026.223352149485,
+    "bothAutoDistance": 33486.392802168404,
+    "pedalTakeover": 47,
+    "steeringTakeover": 14,
+    "uncomfortableBrake1": 12,
+    "uncomfortableBrake1_5": 3,
+    "uncomfortableBrake2": 0,
+    "interventionBrake1": 1,
+    "interventionBrake1_5": 1,
+    "interventionBrake2": 0,
+    "accelTakeover": 71,
+    "cmdBrake1": 84,
+    "cmdBrake1_5": 77,
+    "cmdBrake2": 37,
+    "unnecessaryBrake": 0,
+    "stopFailure": 0,
+    "mrm": 0
   }
 ]
